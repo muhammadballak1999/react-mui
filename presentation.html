@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Management Dashboard - Presentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #1976d2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #1976d2;
+      border-bottom: 2px solid #1976d2;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .screenshots img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      font-size: 14px;
+    }
+    a {
+      color: #1976d2;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Real-time Order Management Dashboard</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Project Description</h2>
+    <p>
+      This project is a <strong>Real-time Order Management Dashboard</strong> built with React, TypeScript, Redux, and Material UI.
+      It allows users to monitor, manage, and update orders with advanced features like filtering, real-time updates, 
+      bulk operations, and drag-and-drop order status management. The goal is to provide a responsive, high-performance,
+      and intuitive interface for handling large datasets of orders efficiently.
+    </p>
+  </section>
+
+  <section class="screenshots">
+    <h2>Screenshots</h2>
+    <p>Key features demonstrated in the app:</p>
+    <img src="screenshots/dashboard-view.png" alt="Dashboard view screenshot">
+    <img src="screenshots/order-details-modal.png" alt="Order details modal screenshot">
+    <img src="screenshots/kanban-view.png" alt="Kanban board screenshot">
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Order listing with pagination and virtualization</li>
+      <li>Advanced filtering (status, date range, amount range, search)</li>
+      <li>Real-time simulation of new orders and status updates</li>
+      <li>Sorting by customer, date, amount, and status</li>
+      <li>Order details modal with status editing</li>
+      <li>Bulk status updates with checkboxes</li>
+      <li>Drag-and-drop Kanban board for status management</li>
+      <li>Keyboard shortcuts (Export CSV, switch views)</li>
+      <li>CSV export of filtered orders</li>
+      <li>Responsive design for desktop and mobile</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technologies and Techniques Used</h2>
+    <ul>
+      <li><strong>React + TypeScript:</strong> Component-driven UI development with strong type safety</li>
+      <li><strong>Redux Toolkit:</strong> State management for orders and filters</li>
+      <li><strong>Material UI (MUI):</strong> Pre-built responsive components</li>
+      <li><strong>MUI DataGrid:</strong> High-performance table with sorting, filtering, and virtualization</li>
+      <li><strong>@hello-pangea/dnd:</strong> Drag-and-drop Kanban board</li>
+      <li><strong>Custom Hooks & Debounced Search:</strong> Smooth UX</li>
+      <li><strong>Real-time simulation:</strong> setInterval for random updates and new orders</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Upcoming Features</h2>
+    <ul>
+      <li>Persistent backend integration (REST or GraphQL)</li>
+      <li>User authentication and role-based permissions</li>
+      <li>Offline-first support with service workers</li>
+      <li>Charts and analytics for revenue and order trends</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>External Resources</h2>
+    <ul>
+      <li><a href="https://mui.com/" target="_blank">Material UI</a></li>
+      <li><a href="https://redux-toolkit.js.org/" target="_blank">Redux Toolkit</a></li>
+      <li><a href="https://hello-pangea.github.io/dnd/" target="_blank">@hello-pangea/dnd</a></li>
+      <li>Icons and assets from Material UI and open-source libraries</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <p>
+      <a href="https://your-live-demo-url" target="_blank">Live Web App</a><br>
+      <a href="https://github.com/your-github-repo-url" target="_blank">GitHub Repository</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>Real-time Order Management Dashboard – Built for Akkooo Coding Challenge</p>
+</footer>
+</body>
+</html>
