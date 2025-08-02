@@ -1,0 +1,707 @@
+{
+  "orders": [
+    {
+      "id": "ORD-2024-001",
+      "customerName": "Sarah Johnson",
+      "customerEmail": "sarah.johnson@email.com",
+      "customerPhone": "+1-555-0101",
+      "orderDate": "2024-01-15T10:30:00Z",
+      "status": "delivered",
+      "total": 149.99,
+      "items": [
+        {
+          "id": "item-001",
+          "name": "Wireless Bluetooth Headphones",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "WBH-001"
+        },
+        {
+          "id": "item-002",
+          "name": "Phone Case - Clear",
+          "quantity": 2,
+          "price": 30.00,
+          "sku": "PC-CLR-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "123 Main Street",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-002",
+      "customerName": "Michael Chen",
+      "customerEmail": "m.chen@email.com",
+      "customerPhone": "+1-555-0102",
+      "orderDate": "2024-01-16T14:22:00Z",
+      "status": "pending",
+      "total": 299.99,
+      "items": [
+        {
+          "id": "item-003",
+          "name": "Gaming Mechanical Keyboard",
+          "quantity": 1,
+          "price": 179.99,
+          "sku": "GMK-001"
+        },
+        {
+          "id": "item-004",
+          "name": "RGB Mouse Pad",
+          "quantity": 1,
+          "price": 49.99,
+          "sku": "RMP-001"
+        },
+        {
+          "id": "item-005",
+          "name": "USB-C Cable 3ft",
+          "quantity": 2,
+          "price": 35.00,
+          "sku": "USC-3FT"
+        }
+      ],
+      "shippingAddress": {
+        "street": "456 Oak Avenue",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94102",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-003",
+      "customerName": "Emily Rodriguez",
+      "customerEmail": "emily.r@email.com",
+      "customerPhone": "+1-555-0103",
+      "orderDate": "2024-01-17T09:15:00Z",
+      "status": "processing",
+      "total": 79.99,
+      "items": [
+        {
+          "id": "item-006",
+          "name": "Yoga Mat - Premium",
+          "quantity": 1,
+          "price": 59.99,
+          "sku": "YM-PREM"
+        },
+        {
+          "id": "item-007",
+          "name": "Water Bottle - 32oz",
+          "quantity": 1,
+          "price": 20.00,
+          "sku": "WB-32OZ"
+        }
+      ],
+      "shippingAddress": {
+        "street": "789 Pine Road",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "73301",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-004",
+      "customerName": "David Kim",
+      "customerEmail": "david.kim@email.com",
+      "customerPhone": "+1-555-0104",
+      "orderDate": "2024-01-18T16:45:00Z",
+      "status": "shipped",
+      "total": 429.99,
+      "items": [
+        {
+          "id": "item-008",
+          "name": "Smart Watch Series 8",
+          "quantity": 1,
+          "price": 399.99,
+          "sku": "SW-S8"
+        },
+        {
+          "id": "item-009",
+          "name": "Watch Band - Sport",
+          "quantity": 1,
+          "price": 30.00,
+          "sku": "WB-SPORT"
+        }
+      ],
+      "shippingAddress": {
+        "street": "321 Elm Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zipCode": "98101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-005",
+      "customerName": "Lisa Thompson",
+      "customerEmail": "lisa.thompson@email.com",
+      "customerPhone": "+1-555-0105",
+      "orderDate": "2024-01-19T11:30:00Z",
+      "status": "cancelled",
+      "total": 199.99,
+      "items": [
+        {
+          "id": "item-010",
+          "name": "Laptop Stand - Adjustable",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "LS-ADJ"
+        },
+        {
+          "id": "item-011",
+          "name": "Wireless Mouse",
+          "quantity": 1,
+          "price": 59.99,
+          "sku": "WM-001"
+        },
+        {
+          "id": "item-012",
+          "name": "Laptop Sleeve 15\"",
+          "quantity": 1,
+          "price": 50.00,
+          "sku": "LSL-15"
+        }
+      ],
+      "shippingAddress": {
+        "street": "654 Maple Drive",
+        "city": "Chicago",
+        "state": "IL",
+        "zipCode": "60601",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-006",
+      "customerName": "James Wilson",
+      "customerEmail": "james.w@email.com",
+      "customerPhone": "+1-555-0106",
+      "orderDate": "2024-01-20T08:20:00Z",
+      "status": "delivered",
+      "total": 89.99,
+      "items": [
+        {
+          "id": "item-013",
+          "name": "Coffee Maker - Single Serve",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "CM-SS"
+        }
+      ],
+      "shippingAddress": {
+        "street": "987 Cedar Lane",
+        "city": "Miami",
+        "state": "FL",
+        "zipCode": "33101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-007",
+      "customerName": "Anna Petrov",
+      "customerEmail": "anna.petrov@email.com",
+      "customerPhone": "+1-555-0107",
+      "orderDate": "2024-01-21T13:10:00Z",
+      "status": "processing",
+      "total": 349.99,
+      "items": [
+        {
+          "id": "item-014",
+          "name": "Professional Blender",
+          "quantity": 1,
+          "price": 249.99,
+          "sku": "PB-001"
+        },
+        {
+          "id": "item-015",
+          "name": "Recipe Book - Smoothies",
+          "quantity": 1,
+          "price": 24.99,
+          "sku": "RB-SMO"
+        },
+        {
+          "id": "item-016",
+          "name": "Protein Powder - Vanilla",
+          "quantity": 1,
+          "price": 75.00,
+          "sku": "PP-VAN"
+        }
+      ],
+      "shippingAddress": {
+        "street": "147 Birch Avenue",
+        "city": "Denver",
+        "state": "CO",
+        "zipCode": "80201",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-008",
+      "customerName": "Robert Martinez",
+      "customerEmail": "robert.m@email.com",
+      "customerPhone": "+1-555-0108",
+      "orderDate": "2024-01-22T17:35:00Z",
+      "status": "pending",
+      "total": 159.99,
+      "items": [
+        {
+          "id": "item-017",
+          "name": "Desk Lamp - LED",
+          "quantity": 1,
+          "price": 79.99,
+          "sku": "DL-LED"
+        },
+        {
+          "id": "item-018",
+          "name": "Desk Organizer",
+          "quantity": 1,
+          "price": 39.99,
+          "sku": "DO-001"
+        },
+        {
+          "id": "item-019",
+          "name": "Notebook Set - 3 Pack",
+          "quantity": 1,
+          "price": 40.00,
+          "sku": "NB-3PK"
+        }
+      ],
+      "shippingAddress": {
+        "street": "258 Spruce Court",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zipCode": "85001",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-009",
+      "customerName": "Jessica Lee",
+      "customerEmail": "jessica.lee@email.com",
+      "customerPhone": "+1-555-0109",
+      "orderDate": "2024-01-23T12:50:00Z",
+      "status": "shipped",
+      "total": 249.99,
+      "items": [
+        {
+          "id": "item-020",
+          "name": "Air Purifier - HEPA",
+          "quantity": 1,
+          "price": 199.99,
+          "sku": "AP-HEPA"
+        },
+        {
+          "id": "item-021",
+          "name": "Replacement Filter",
+          "quantity": 2,
+          "price": 25.00,
+          "sku": "RF-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "369 Willow Street",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-010",
+      "customerName": "Thomas Brown",
+      "customerEmail": "thomas.brown@email.com",
+      "customerPhone": "+1-555-0110",
+      "orderDate": "2024-01-24T15:25:00Z",
+      "status": "delivered",
+      "total": 119.99,
+      "items": [
+        {
+          "id": "item-022",
+          "name": "Bluetooth Speaker - Portable",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "BS-PORT"
+        },
+        {
+          "id": "item-023",
+          "name": "Speaker Case",
+          "quantity": 1,
+          "price": 30.00,
+          "sku": "SC-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "741 Poplar Road",
+        "city": "Nashville",
+        "state": "TN",
+        "zipCode": "37201",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-011",
+      "customerName": "Maria Garcia",
+      "customerEmail": "maria.garcia@email.com",
+      "customerPhone": "+1-555-0111",
+      "orderDate": "2024-01-25T09:40:00Z",
+      "status": "processing",
+      "total": 89.99,
+      "items": [
+        {
+          "id": "item-024",
+          "name": "Kitchen Scale - Digital",
+          "quantity": 1,
+          "price": 49.99,
+          "sku": "KS-DIG"
+        },
+        {
+          "id": "item-025",
+          "name": "Measuring Cups Set",
+          "quantity": 1,
+          "price": 19.99,
+          "sku": "MC-SET"
+        },
+        {
+          "id": "item-026",
+          "name": "Recipe Cards - Blank",
+          "quantity": 1,
+          "price": 20.00,
+          "sku": "RC-BLK"
+        }
+      ],
+      "shippingAddress": {
+        "street": "852 Hickory Lane",
+        "city": "Atlanta",
+        "state": "GA",
+        "zipCode": "30301",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-012",
+      "customerName": "Kevin Davis",
+      "customerEmail": "kevin.davis@email.com",
+      "customerPhone": "+1-555-0112",
+      "orderDate": "2024-01-26T14:15:00Z",
+      "status": "pending",
+      "total": 399.99,
+      "items": [
+        {
+          "id": "item-027",
+          "name": "Monitor 27\" 4K",
+          "quantity": 1,
+          "price": 349.99,
+          "sku": "MON-27-4K"
+        },
+        {
+          "id": "item-028",
+          "name": "HDMI Cable 6ft",
+          "quantity": 1,
+          "price": 25.00,
+          "sku": "HDMI-6FT"
+        },
+        {
+          "id": "item-029",
+          "name": "Monitor Stand",
+          "quantity": 1,
+          "price": 25.00,
+          "sku": "MS-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "963 Ash Boulevard",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zipCode": "89101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-013",
+      "customerName": "Rachel Green",
+      "customerEmail": "rachel.green@email.com",
+      "customerPhone": "+1-555-0113",
+      "orderDate": "2024-01-27T11:05:00Z",
+      "status": "shipped",
+      "total": 179.99,
+      "items": [
+        {
+          "id": "item-030",
+          "name": "Essential Oils Set",
+          "quantity": 1,
+          "price": 129.99,
+          "sku": "EO-SET"
+        },
+        {
+          "id": "item-031",
+          "name": "Diffuser - Ultrasonic",
+          "quantity": 1,
+          "price": 50.00,
+          "sku": "DIF-ULT"
+        }
+      ],
+      "shippingAddress": {
+        "street": "174 Magnolia Circle",
+        "city": "Charlotte",
+        "state": "NC",
+        "zipCode": "28201",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-014",
+      "customerName": "Daniel Anderson",
+      "customerEmail": "daniel.anderson@email.com",
+      "customerPhone": "+1-555-0114",
+      "orderDate": "2024-01-28T16:20:00Z",
+      "status": "cancelled",
+      "total": 129.99,
+      "items": [
+        {
+          "id": "item-032",
+          "name": "Webcam HD 1080p",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "WC-HD"
+        },
+        {
+          "id": "item-033",
+          "name": "Microphone - USB",
+          "quantity": 1,
+          "price": 40.00,
+          "sku": "MIC-USB"
+        }
+      ],
+      "shippingAddress": {
+        "street": "285 Cherry Street",
+        "city": "San Diego",
+        "state": "CA",
+        "zipCode": "92101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-015",
+      "customerName": "Amanda White",
+      "customerEmail": "amanda.white@email.com",
+      "customerPhone": "+1-555-0115",
+      "orderDate": "2024-01-29T10:30:00Z",
+      "status": "delivered",
+      "total": 69.99,
+      "items": [
+        {
+          "id": "item-034",
+          "name": "Planner - 2024 Daily",
+          "quantity": 1,
+          "price": 34.99,
+          "sku": "PL-2024"
+        },
+        {
+          "id": "item-035",
+          "name": "Pen Set - Gel",
+          "quantity": 1,
+          "price": 19.99,
+          "sku": "PS-GEL"
+        },
+        {
+          "id": "item-036",
+          "name": "Sticky Notes Pack",
+          "quantity": 1,
+          "price": 15.00,
+          "sku": "SN-PACK"
+        }
+      ],
+      "shippingAddress": {
+        "street": "396 Sycamore Way",
+        "city": "Boston",
+        "state": "MA",
+        "zipCode": "02101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-016",
+      "customerName": "Christopher Taylor",
+      "customerEmail": "chris.taylor@email.com",
+      "customerPhone": "+1-555-0116",
+      "orderDate": "2024-01-30T13:45:00Z",
+      "status": "processing",
+      "total": 279.99,
+      "items": [
+        {
+          "id": "item-037",
+          "name": "Electric Kettle - Glass",
+          "quantity": 1,
+          "price": 79.99,
+          "sku": "EK-GLASS"
+        },
+        {
+          "id": "item-038",
+          "name": "Tea Selection Box",
+          "quantity": 1,
+          "price": 49.99,
+          "sku": "TSB-001"
+        },
+        {
+          "id": "item-039",
+          "name": "French Press",
+          "quantity": 1,
+          "price": 59.99,
+          "sku": "FP-001"
+        },
+        {
+          "id": "item-040",
+          "name": "Coffee Beans - Premium",
+          "quantity": 2,
+          "price": 45.00,
+          "sku": "CB-PREM"
+        }
+      ],
+      "shippingAddress": {
+        "street": "507 Dogwood Drive",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zipCode": "55401",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-017",
+      "customerName": "Stephanie Clark",
+      "customerEmail": "stephanie.clark@email.com",
+      "customerPhone": "+1-555-0117",
+      "orderDate": "2024-01-31T08:10:00Z",
+      "status": "pending",
+      "total": 189.99,
+      "items": [
+        {
+          "id": "item-041",
+          "name": "Fitness Tracker",
+          "quantity": 1,
+          "price": 149.99,
+          "sku": "FT-001"
+        },
+        {
+          "id": "item-042",
+          "name": "Workout Band Set",
+          "quantity": 1,
+          "price": 40.00,
+          "sku": "WBS-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "618 Redwood Avenue",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zipCode": "84101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-018",
+      "customerName": "Matthew Lewis",
+      "customerEmail": "matthew.lewis@email.com",
+      "customerPhone": "+1-555-0118",
+      "orderDate": "2024-02-01T12:25:00Z",
+      "status": "shipped",
+      "total": 329.99,
+      "items": [
+        {
+          "id": "item-043",
+          "name": "Tablet 10.9\" 64GB",
+          "quantity": 1,
+          "price": 299.99,
+          "sku": "TAB-10-64"
+        },
+        {
+          "id": "item-044",
+          "name": "Tablet Case - Folio",
+          "quantity": 1,
+          "price": 30.00,
+          "sku": "TC-FOLIO"
+        }
+      ],
+      "shippingAddress": {
+        "street": "729 Juniper Street",
+        "city": "Kansas City",
+        "state": "MO",
+        "zipCode": "64101",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-019",
+      "customerName": "Nicole Walker",
+      "customerEmail": "nicole.walker@email.com",
+      "customerPhone": "+1-555-0119",
+      "orderDate": "2024-02-02T15:50:00Z",
+      "status": "delivered",
+      "total": 99.99,
+      "items": [
+        {
+          "id": "item-045",
+          "name": "Backpack - Laptop Compatible",
+          "quantity": 1,
+          "price": 89.99,
+          "sku": "BP-LAPTOP"
+        },
+        {
+          "id": "item-046",
+          "name": "Cable Organizer",
+          "quantity": 1,
+          "price": 10.00,
+          "sku": "CO-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "830 Fir Lane",
+        "city": "Columbus",
+        "state": "OH",
+        "zipCode": "43201",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ORD-2024-020",
+      "customerName": "Brandon Hall",
+      "customerEmail": "brandon.hall@email.com",
+      "customerPhone": "+1-555-0120",
+      "orderDate": "2024-02-03T09:15:00Z",
+      "status": "processing",
+      "total": 449.99,
+      "items": [
+        {
+          "id": "item-047",
+          "name": "Robot Vacuum",
+          "quantity": 1,
+          "price": 399.99,
+          "sku": "RV-001"
+        },
+        {
+          "id": "item-048",
+          "name": "Extra Filter Pack",
+          "quantity": 1,
+          "price": 25.00,
+          "sku": "EFP-001"
+        },
+        {
+          "id": "item-049",
+          "name": "Cleaning Solution",
+          "quantity": 1,
+          "price": 25.00,
+          "sku": "CS-001"
+        }
+      ],
+      "shippingAddress": {
+        "street": "941 Walnut Place",
+        "city": "Jacksonville",
+        "state": "FL",
+        "zipCode": "32201",
+        "country": "USA"
+      }
+    }
+  ]
+} 
