@@ -3,145 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Order Management Dashboard - Presentation</title>
+  <title>Real-time Order Management Dashboard - Presentation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #fafafa;
+      margin: 0; padding: 0;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
       background: #1976d2;
       color: white;
-      padding: 20px;
+      padding: 1.5rem;
       text-align: center;
     }
     main {
       max-width: 900px;
-      margin: 20px auto;
-      padding: 0 20px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 2rem;
     }
     h2 {
       color: #1976d2;
-      border-bottom: 2px solid #1976d2;
-      padding-bottom: 5px;
+      margin-bottom: 0.5rem;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .screenshots {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     .screenshots img {
-      max-width: 100%;
-      height: auto;
+      width: 100%;
+      border-radius: 6px;
       border: 1px solid #ddd;
-      border-radius: 4px;
-      margin-bottom: 15px;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f0f0f0;
-      font-size: 14px;
+    ul {
+      padding-left: 1.5rem;
     }
     a {
       color: #1976d2;
-      text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-<header>
-  <h1>Real-time Order Management Dashboard</h1>
-</header>
+  <header>
+    <h1>Real-time Order Management Dashboard</h1>
+    <p>Presentation Page</p>
+  </header>
+  <main>
+    <section>
+      <h2>Project Description</h2>
+      <p>
+        This project is a <strong>real-time order management dashboard</strong> built with React, TypeScript, Redux Toolkit, and Material UI. 
+        It simulates a production-like system where administrators can view, filter, update, and manage customer orders efficiently with real-time updates.
+      </p>
+    </section>
 
-<main>
-  <section>
-    <h2>Project Description</h2>
-    <p>
-      This project is a <strong>Real-time Order Management Dashboard</strong> built with React, TypeScript, Redux, and Material UI.
-      It allows users to monitor, manage, and update orders with advanced features like filtering, real-time updates, 
-      bulk operations, and drag-and-drop order status management. The goal is to provide a responsive, high-performance,
-      and intuitive interface for handling large datasets of orders efficiently.
-    </p>
-  </section>
+    <section>
+      <h2>Screenshots</h2>
+      <div class="screenshots">
+        <img src="screenshots/dashboard.png" alt="Dashboard Screenshot"/>
+        <img src="screenshots/filters.png" alt="Filters Screenshot"/>
+        <img src="screenshots/kanban.png" alt="Kanban Screenshot"/>
+        <img src="screenshots/details.png" alt="Order Details Screenshot"/>
+      </div>
+    </section>
 
-  <section class="screenshots">
-    <h2>Screenshots</h2>
-    <p>Key features demonstrated in the app:</p>
-    <img src="screenshots/dashboard-view.png" alt="Dashboard view screenshot">
-    <img src="screenshots/order-details-modal.png" alt="Order details modal screenshot">
-    <img src="screenshots/kanban-view.png" alt="Kanban board screenshot">
-  </section>
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive dashboard showing real-time order updates</li>
+        <li>Advanced filters (status, date range, amount range, search)</li>
+        <li>Bulk operations with selection and status updates</li>
+        <li>Order details modal with editable status</li>
+        <li>Kanban board with drag-and-drop order management</li>
+        <li>Real-time simulation of new orders and status updates</li>
+        <li>Export filtered orders to CSV</li>
+        <li>Dark/Light theme toggle</li>
+        <li>Keyboard shortcuts for common actions</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Features</h2>
-    <ul>
-      <li>Order listing with pagination and virtualization</li>
-      <li>Advanced filtering (status, date range, amount range, search)</li>
-      <li>Real-time simulation of new orders and status updates</li>
-      <li>Sorting by customer, date, amount, and status</li>
-      <li>Order details modal with status editing</li>
-      <li>Bulk status updates with checkboxes</li>
-      <li>Drag-and-drop Kanban board for status management</li>
-      <li>Keyboard shortcuts (Export CSV, switch views)</li>
-      <li>CSV export of filtered orders</li>
-      <li>Responsive design for desktop and mobile</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Technologies and Techniques Used</h2>
+      <ul>
+        <li><strong>React + TypeScript</strong> for UI and type-safe components</li>
+        <li><strong>Redux Toolkit</strong> for state management</li>
+        <li><strong>Material UI</strong> for design and layout</li>
+        <li><strong>@hello-pangea/dnd</strong> for drag-and-drop Kanban board</li>
+        <li>Debounced search, pagination, and performance optimizations</li>
+        <li>Responsive and accessible design</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Technologies and Techniques Used</h2>
-    <ul>
-      <li><strong>React + TypeScript:</strong> Component-driven UI development with strong type safety</li>
-      <li><strong>Redux Toolkit:</strong> State management for orders and filters</li>
-      <li><strong>Material UI (MUI):</strong> Pre-built responsive components</li>
-      <li><strong>MUI DataGrid:</strong> High-performance table with sorting, filtering, and virtualization</li>
-      <li><strong>@hello-pangea/dnd:</strong> Drag-and-drop Kanban board</li>
-      <li><strong>Custom Hooks & Debounced Search:</strong> Smooth UX</li>
-      <li><strong>Real-time simulation:</strong> setInterval for random updates and new orders</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Upcoming Features</h2>
+      <ul>
+        <li>Role-based user authentication</li>
+        <li>WebSocket or SignalR integration for live data</li>
+        <li>Customizable reports and analytics</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Upcoming Features</h2>
-    <ul>
-      <li>Persistent backend integration (REST or GraphQL)</li>
-      <li>User authentication and role-based permissions</li>
-      <li>Offline-first support with service workers</li>
-      <li>Charts and analytics for revenue and order trends</li>
-    </ul>
-  </section>
+    <section>
+      <h2>External Resources</h2>
+      <ul>
+        <li>Material UI: <a href="https://mui.com/" target="_blank">https://mui.com/</a></li>
+        <li>Drag-and-drop: <a href="https://github.com/hello-pangea/dnd" target="_blank">@hello-pangea/dnd</a></li>
+        <li>Icons: <a href="https://mui.com/material-ui/material-icons/" target="_blank">Material Icons</a></li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>External Resources</h2>
-    <ul>
-      <li><a href="https://mui.com/" target="_blank">Material UI</a></li>
-      <li><a href="https://redux-toolkit.js.org/" target="_blank">Redux Toolkit</a></li>
-      <li><a href="https://hello-pangea.github.io/dnd/" target="_blank">@hello-pangea/dnd</a></li>
-      <li>Icons and assets from Material UI and open-source libraries</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Links</h2>
-    <p>
-      <a href="https://your-live-demo-url" target="_blank">Live Web App</a><br>
-      <a href="https://github.com/your-github-repo-url" target="_blank">GitHub Repository</a>
-    </p>
-  </section>
-</main>
-
-<footer>
-  <p>Real-time Order Management Dashboard – Built for Akkooo Coding Challenge</p>
-</footer>
+    <section>
+      <h2>Links</h2>
+      <ul>
+        <li>GitHub Repository: <a href="https://github.com/your-username/realtime-dashboard" target="_blank">https://github.com/your-username/realtime-dashboard</a></li>
+        <li>Live Demo: <a href="https://your-live-demo-url.com" target="_blank">https://your-live-demo-url.com</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Real-time Dashboard
+  </footer>
 </body>
 </html>
