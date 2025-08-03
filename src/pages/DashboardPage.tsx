@@ -19,7 +19,7 @@ import {
   selectFilteredOrders,
 } from "../features/orders/ordersSlice";
 import mockOrdersData from "../data/mock-orders.json";
-import OrdersTable from "../components/OrdersTable";
+import OrdersCards from "../components/OrdersCards";
 import KanbanBoardPage from "./KanbanBoardPage";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -33,6 +33,7 @@ const statusOptions: Order["status"][] = [
   "cancelled",
 ];
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const exportToCSV = (orders: Order[]) => {
   const headers = [
     "ID",
@@ -138,25 +139,26 @@ export default function DashboardPage() {
         <Button
           variant={view === "dashboard" ? "contained" : "outlined"}
           onClick={() => setView("dashboard")}
-          sx={{ mr: 1 }}
+          sx={{ m: 1 }}
         >
           Table View (Alt+T)
         </Button>
         <Button
           variant={view === "kanban" ? "contained" : "outlined"}
           onClick={() => setView("kanban")}
+          sx={{ m: 1 }}
         >
           Kanban View (Alt+K)
         </Button>
       </Box>
 
       {/* Summary cards */}
-      <Box sx={{ display: "flex", gap: 2, mb: 2 }}>
-        <Paper sx={{ p: 2, flex: 1 }}>
+      <Box sx={{ display: "flex", gap: 2, mb: 2, flexWrap: 'wrap' }}>
+        <Paper sx={{ p: 2, flex: 1, minWidth: '300px' }}>
           <Typography variant="h6">Total Orders</Typography>
           <Typography variant="h4">{totalOrders}</Typography>
         </Paper>
-        <Paper sx={{ p: 2, flex: 1 }}>
+        <Paper sx={{ p: 2, flex: 1, minWidth: '300px' }}>
           <Typography variant="h6">Total Revenue</Typography>
           <Typography variant="h4">${totalRevenue.toFixed(2)}</Typography>
         </Paper>
@@ -263,7 +265,7 @@ export default function DashboardPage() {
       {/* Show Table or Kanban */}
       {view === "dashboard" ? (
         <Paper sx={{ padding: 2 }}>
-          <OrdersTable rows={filteredOrders} />
+          <OrdersCards rows={filteredOrders} />
         </Paper>
       ) : (
         <KanbanBoardPage />
