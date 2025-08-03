@@ -1,69 +1,46 @@
-# React + TypeScript + Vite
+# Real-time Order Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, responsive, and real-time dashboard** for managing orders, built with **React, TypeScript, Redux Toolkit, and Material UI**.  
+It supports real-time updates, Kanban drag-and-drop, filtering, bulk actions, and responsive layouts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-%23764ABC.svg?logo=redux)
+![Material UI](https://img.shields.io/badge/MUI-5-blue?logo=mui)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Live Demo & Links
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Live App:** [https://react-mui-yoep.vercel.app/](https://react-mui-yoep.vercel.app/)
+- **Presentation Page:** [https://react-mui-yoep.vercel.app/presentation.html](https://react-mui-yoep.vercel.app/presentation.html)
+- **GitHub Repo:** [https://github.com/muhammadballak1999/react-mui](https://github.com/muhammadballak1999/react-mui)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Setup and Run Instructions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
+- Node.js >= 18
+- npm or yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Steps to Run Locally
+```bash
+# Clone repository
+git clone https://github.com/muhammadballak1999/react-mui.git
+cd react-mui
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Open in browser
+http://localhost:5173
+
+# Build for production
+npm run build

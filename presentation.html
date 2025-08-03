@@ -2,139 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Real-time Order Management Dashboard - Presentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Management Dashboard - Presentation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #222;
     }
     header {
       background: #1976d2;
       color: white;
-      padding: 1.5rem;
+      padding: 40px 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
     main {
-      max-width: 900px;
-      margin: 2rem auto;
+      max-width: 1000px;
+      margin: 40px auto;
       background: white;
-      padding: 2rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 40px;
     }
     h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
       color: #1976d2;
-      margin-bottom: 0.5rem;
-    }
-    .screenshots {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .screenshots img {
-      width: 100%;
-      border-radius: 6px;
-      border: 1px solid #ddd;
     }
     ul {
-      padding-left: 1.5rem;
+      padding-left: 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
-    a {
-      color: #1976d2;
+    img.screenshot {
+      max-width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #666;
-      font-size: 0.9rem;
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: white;
+      background: #1976d2;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .links a:hover {
+      background: #125ea6;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Real-time Order Management Dashboard</h1>
-    <p>Presentation Page</p>
+    <h1>Order Management Dashboard</h1>
   </header>
   <main>
     <section>
       <h2>Project Description</h2>
       <p>
-        This project is a <strong>real-time order management dashboard</strong> built with React, TypeScript, Redux Toolkit, and Material UI. 
-        It simulates a production-like system where administrators can view, filter, update, and manage customer orders efficiently with real-time updates.
+        This application is a real-time order management dashboard designed to
+        manage and visualize orders. It includes live order updates, filtering,
+        search, Kanban drag-and-drop, bulk operations, and a responsive UI.
       </p>
     </section>
 
     <section>
       <h2>Screenshots</h2>
-      <div class="screenshots">
-        <img src="screenshots/dashboard.png" alt="Dashboard Screenshot"/>
-        <img src="screenshots/filters.png" alt="Filters Screenshot"/>
-        <img src="screenshots/kanban.png" alt="Kanban Screenshot"/>
-        <img src="screenshots/details.png" alt="Order Details Screenshot"/>
-      </div>
+      <img src="https://react-mui-yoep.vercel.app/screenshot1.png" alt="Screenshot 1" class="screenshot">
+      <img src="https://react-mui-yoep.vercel.app/screenshot2.png" alt="Screenshot 2" class="screenshot">
     </section>
 
     <section>
       <h2>Features</h2>
       <ul>
-        <li>Responsive dashboard showing real-time order updates</li>
-        <li>Advanced filters (status, date range, amount range, search)</li>
-        <li>Bulk operations with selection and status updates</li>
-        <li>Order details modal with editable status</li>
-        <li>Kanban board with drag-and-drop order management</li>
-        <li>Real-time simulation of new orders and status updates</li>
-        <li>Export filtered orders to CSV</li>
-        <li>Dark/Light theme toggle</li>
-        <li>Keyboard shortcuts for common actions</li>
+        <li>Real-time updates (new orders & random status changes)</li>
+        <li>Advanced filters, search, and sorting</li>
+        <li>Bulk operations with multi-select</li>
+        <li>Kanban board with drag-and-drop</li>
+        <li>Responsive card view with pagination</li>
+        <li>CSV export and keyboard shortcuts</li>
+        <li>Dark/light theme toggle</li>
       </ul>
     </section>
 
     <section>
       <h2>Technologies and Techniques Used</h2>
       <ul>
-        <li><strong>React + TypeScript</strong> for UI and type-safe components</li>
-        <li><strong>Redux Toolkit</strong> for state management</li>
-        <li><strong>Material UI</strong> for design and layout</li>
-        <li><strong>@hello-pangea/dnd</strong> for drag-and-drop Kanban board</li>
-        <li>Debounced search, pagination, and performance optimizations</li>
-        <li>Responsive and accessible design</li>
+        <li>React + TypeScript + Redux Toolkit</li>
+        <li>Material UI (MUI)</li>
+        <li>@hello-pangea/dnd for drag-and-drop</li>
+        <li>Vercel for deployment</li>
+        <li>Performance optimizations (memoization, lazy loading)</li>
       </ul>
     </section>
 
     <section>
       <h2>Upcoming Features</h2>
       <ul>
-        <li>Role-based user authentication</li>
-        <li>WebSocket or SignalR integration for live data</li>
-        <li>Customizable reports and analytics</li>
+        <li>Order analytics dashboards</li>
+        <li>Role-based access control</li>
+        <li>API integration with a backend</li>
       </ul>
     </section>
 
     <section>
       <h2>External Resources</h2>
       <ul>
-        <li>Material UI: <a href="https://mui.com/" target="_blank">https://mui.com/</a></li>
-        <li>Drag-and-drop: <a href="https://github.com/hello-pangea/dnd" target="_blank">@hello-pangea/dnd</a></li>
-        <li>Icons: <a href="https://mui.com/material-ui/material-icons/" target="_blank">Material Icons</a></li>
+        <li>Material UI icons</li>
+        <li>@hello-pangea/dnd</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li>GitHub Repository: <a href="https://github.com/your-username/realtime-dashboard" target="_blank">https://github.com/your-username/realtime-dashboard</a></li>
-        <li>Live Demo: <a href="https://your-live-demo-url.com" target="_blank">https://your-live-demo-url.com</a></li>
-      </ul>
+    <section class="links">
+      <a href="https://react-mui-yoep.vercel.app/" target="_blank">Live App</a>
+      <a href="https://github.com/muhammadballak1999/react-mui" target="_blank">GitHub Repo</a>
     </section>
   </main>
-  <footer>
-    &copy; 2025 Real-time Dashboard
-  </footer>
 </body>
 </html>
